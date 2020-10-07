@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import SunriseSunsetForm from "./SunriseSunsetForm";
-import SunriseSunsetResult from "./SunriseSunsetResult"
+import SunriseSunsetForm from "./SunriseSunsetForm/SunriseSunsetForm";
+import SunriseSunsetResult from "./SunriseSunsetResult/SunriseSunsetResult"
 import {Container, Row} from "react-bootstrap";
 
 
@@ -12,7 +12,7 @@ function SunriseSunsetApp() {
     const [resultsReady, setResultsReady]=useState(false)
 
     return (
-        <div>
+        <Container>
             <SunriseSunsetForm
 
                 setSelectedCountry={setSelectedCountry}
@@ -31,7 +31,7 @@ function SunriseSunsetApp() {
                 sunsetTime={sunsetTime}
                 coords={coords}
             />
-        </div>
+        </Container>
     )
 }
 

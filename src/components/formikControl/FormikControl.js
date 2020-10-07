@@ -1,8 +1,8 @@
 import React from "react";
 
-import Autocomplete from "./select/Autocomplete";
+import AutocompleteSelect from "../select/AutocompleteSelect";
 
-import DatePicker from "./datePicker/DatePicker";
+import DatePicker from "../datePicker/DatePicker";
 
 function FormikControl(props) {
     const {control, ...rest} = props
@@ -12,7 +12,7 @@ function FormikControl(props) {
         case 'textarea':
             return null
         case 'select':
-            return <Autocomplete {...rest}/>
+            return <AutocompleteSelect {...rest}/>
         case 'radio':
             return null
         case 'checkbox':

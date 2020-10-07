@@ -1,0 +1,41 @@
+.date-picker {
+    padding-right: 5px;
+    margin-top: 5px !important;
+}
+
+.label-icon {
+    padding-left: 0;
+    margin-top: 5px !important;
+}
+
+.myContainter {
+    padding-right: 3px !important;
+    padding-left: 0px !important;
+}
+
+
+@media (min-width: 768px) {
+    .date-row {
+        width: 350px !important;
+    }
+
+    .myDatePicker {
+        margin-top: 5px !important;
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .date-row {
+        margin: 0!important;
+
+        width: 93vw !important;
+    }
+
+    .myDatePicker {
+        margin-top: 5px !important;
+        width: 78vw !important;
+    }
+
+}
+

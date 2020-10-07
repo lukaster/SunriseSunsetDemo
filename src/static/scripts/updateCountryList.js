@@ -2,8 +2,9 @@ const axios = require('axios');
 const fs = require('fs');
 
 async function updateCountryList() {
-    const countryArray = await getListOfCountries();
-    writeArrayToFile(countryArray, "../data/countryList.data");
+    let countryArray = await getListOfCountries();
+    countryArray=countryArray.sort();
+    writeArrayToFile(countryArray, "../data/countryList.json");
 };
 
 async function getListOfCountries() {

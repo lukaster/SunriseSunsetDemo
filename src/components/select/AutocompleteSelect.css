@@ -1,0 +1,17 @@
+.MuiInputBase-input {
+    height: 7px!important;
+
+    }
+
+
+@media (min-width: 768px) {
+    .MuiInputBase-root{
+        width: 350px!important;
+    }
+}
+
+@media (max-width: 767px) {
+    .MuiInputBase-root{
+        width: 93vw!important;
+    }
+}

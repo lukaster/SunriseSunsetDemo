@@ -1,24 +1,27 @@
 import React from "react";
 import {Field, ErrorMessage} from "formik";
-import TextError from "./TextError";
+import TextError from "../TextError/TextError";
 import DateView from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import {Container, Row, Col} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './DatePicker.css'
 
 function DatePicker(props) {
+    //console.log('props',props)
     const {label, name, ...rest} = props;
+
     return (
         <>
-            <Row>
+            <Row className={'date-row'}>
 
-                <Col md={'8'} xs={'6'}>
+                <Col className="myContainter">
                     <Field name={name}>
                         {
                             ({field, form}) => {
                                 const {setFieldValue} = form;
                                 const {value} = field;
-                                return <DateView
+                                return <DateView className="myDatePicker"
                                     id={name}
                                     {...field}
                                     {...rest}
@@ -29,11 +32,16 @@ function DatePicker(props) {
                         }
                     </Field>
                 </Col>
-                <Col md={'4'} xs={'1'}>
-                    <label htmlFor={name}>{label}</label>
+                <Col className={'label-icon'}>
+                    <label htmlFor={name}>
+                        <img className={'label-img'}
+                             width={30}
+                             height={30}
+                             src={require('../../static/images/date_picker.png')}/>
+                    </label>
                 </Col>
             </Row>
-            <Row>
+            <Row className={'error-row'}>
                 <Col>
                     <ErrorMessage name={name} component={TextError}/>
                 </Col>

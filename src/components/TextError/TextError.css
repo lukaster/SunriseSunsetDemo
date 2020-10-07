@@ -1,0 +1,10 @@
+.error{
+    color: darkred;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .error{
+        padding-bottom: 10px;
+    }
+}

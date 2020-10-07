@@ -1,0 +1,36 @@
+.sunrise-form {
+    padding-top: 7vh;
+}
+
+
+@media (max-width: 767px) {
+    .submit-btn {
+
+        width: 93vw !important;
+    }
+}
+
+.btn {
+
+    text-align: center;
+}
+
+#btn_container img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.btn-txt {
+    vertical-align: middle;
+    padding-left: 3px;
+    padding-right: 15px;
+
+}
+
+.button-img{
+    width: 50px;
+}
+.btn-col{
+    margin: auto;
+    margin-top: 40px;
+}
