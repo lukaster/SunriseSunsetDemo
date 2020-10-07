@@ -10,14 +10,15 @@ AND (max-width: 980px) {
     margin-right: 5%;
   }
 }
-@media (min-width: 980px)
-AND (max-width: 1500px) {
+@media (min-width: 980px) {
+  .container{
+    max-width: 800px!important;
+  }
   .App{
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
-
 
 @media (min-width: 400px)
 AND (max-width: 767px) {

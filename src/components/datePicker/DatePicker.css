@@ -17,6 +17,7 @@
 @media (min-width: 768px) {
     .date-row {
         width: 350px !important;
+        margin:auto ;
     }
 
     .myDatePicker {
@@ -34,8 +35,16 @@
 
     .myDatePicker {
         margin-top: 5px !important;
-        width: 78vw !important;
+        width: 82vw !important;
     }
 
+    label{
+        display: block;
+        text-align:right;
+
+    }
+    .label-icon{
+        padding-right: 0px !important;
+    }
 }
 
