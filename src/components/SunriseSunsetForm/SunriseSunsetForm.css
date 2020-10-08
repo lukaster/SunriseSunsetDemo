@@ -1,3 +1,4 @@
+
 .sunrise-form {
     padding-top: 7vh;
 }
@@ -5,13 +6,11 @@
 
 @media (max-width: 767px) {
     .submit-btn {
-
         width: 93vw !important;
     }
 }
 
 .btn {
-
     text-align: center;
 }
 

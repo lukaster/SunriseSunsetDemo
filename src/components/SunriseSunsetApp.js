@@ -12,7 +12,7 @@ function SunriseSunsetApp() {
     const [resultsReady, setResultsReady]=useState(false)
 
     return (
-        <Container>
+        <Container fluid >
             <SunriseSunsetForm
 
                 setSelectedCountry={setSelectedCountry}

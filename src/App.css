@@ -3,27 +3,17 @@
   justify-content: center;
 }
 
-@media (min-width: 780px)
-AND (max-width: 980px) {
+@media (min-width: 780px) {
   .App{
     margin-left: 5%;
     margin-right: 5%;
   }
 }
+
 @media (min-width: 980px) {
-  .container{
+  .container-fluid{
     max-width: 800px!important;
   }
-  .App{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
 }
 
-@media (min-width: 400px)
-AND (max-width: 767px) {
-  .container{
-    margin-left: 10px!important;
 
-  }
-}

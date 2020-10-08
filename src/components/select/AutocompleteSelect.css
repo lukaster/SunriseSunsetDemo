@@ -6,7 +6,7 @@
 
 @media (min-width: 768px) {
     .MuiInputBase-root{
-        width: 350px!important;
+        width: 100%!important;
     }
 }
 
